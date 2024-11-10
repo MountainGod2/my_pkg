@@ -31,7 +31,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ env.REGISTRY }}/${{ github.repository }}
+            ghcr.io/${{ github.repository }}
           tags: |
             type=schedule,pattern=nightly
             type=ref,event=branch
@@ -39,9 +39,6 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
             type=sha
-        env:
-          REGISTRY: |
-            ghcr.io
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
