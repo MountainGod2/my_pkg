@@ -21,9 +21,6 @@ jobs:
       matrix:
         os: [ubuntu-22.04, ubuntu-20.04]
         platform: [linux/amd64, linux/arm64]
-    env:
-      REGISTRY: |
-        ghcr.io
 
     steps:
       - name: Checkout Repository
@@ -42,6 +39,9 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
             type=sha
+        env:
+          REGISTRY: |
+            ghcr.io
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
