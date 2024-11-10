@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.4 (2024-11-10)
+
+### Bug Fixes
+
+- Update Docker image build workflow to use hardcoded registry URL
+  ([`25fe4bf`](https://github.com/MountainGod2/my_pkg/commit/25fe4bfd45e32d9da79c80275bd2bf87b5559695))
+
+
 ## v0.1.3 (2024-11-10)
 
 ### Bug Fixes
