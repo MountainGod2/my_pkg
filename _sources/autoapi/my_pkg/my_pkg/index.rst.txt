@@ -1,0 +1,27 @@
+my_pkg.my_pkg
+=============
+
+.. py:module:: my_pkg.my_pkg
+
+.. autoapi-nested-parse::
+
+   my_pkg package.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   my_pkg.my_pkg.main
+
+
+Module Contents
+---------------
+
+.. py:function:: main() -> str
+
+   Return a greeting.
+
+
