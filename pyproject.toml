@@ -1,0 +1,82 @@
+[project]
+authors = [
+  { name = "MountainGod2", email = "admin@reid.ca" },
+]
+description = "A package for doing great things!"
+license = { file = "LICENSE" }
+name = "my_pkg"
+readme = "README.md"
+requires-python = ">=3.12"
+version = "0.1.0"
+
+[dependency-groups]
+dev = [
+  "bandit",
+  "mypy",
+  "pre-commit",
+  "pylint",
+  "pytest",
+  "pytest-cov",
+  "python-semantic-release",
+  "ruff",
+]
+docs = ["myst-nb", "sphinx-autoapi", "sphinx-rtd-theme"]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.semantic_release]
+branch = "main"                                   # branch to make releases of
+build_command = "pip install uv && uv build"      # build dists
+changelog_file = "CHANGELOG.md"                   # changelog file
+version_toml = ["pyproject.toml:project.version"] # version location
+
+[tool.coverage]
+omit = ["examples/*", "tests/*"]
+report.fail_under = 80
+report.show_missing = true
+report.skip_covered = true
+run.branch = true
+source = ["my_pkg"]
+
+[tool.pytest]
+ini_options.addopts = "--cov=my_pkg --cov-report=term-missing --cov-report=xml --cov-fail-under=80"
+ini_options.testpaths = "tests"
+
+[tool.ruff]
+fix = true
+format.docstring-code-format = true
+format.docstring-code-line-length = "dynamic"
+format.indent-style = "space"
+format.line-ending = "auto"
+format.preview = true
+format.quote-style = "double"
+format.skip-magic-trailing-comma = false
+line-length = 100
+lint.fixable = ["ALL"]
+lint.ignore = ["COM812", "D203", "D213", "INP001", "ISC001"]
+lint.per-file-ignores."docs/*" = ["A", "D", "EXE002", "T201"]
+lint.per-file-ignores."tests/*" = ["S101"]
+lint.pydocstyle.convention = "google"
+lint.select = ["ALL"]
+lint.unfixable = []
+
+[tool.pylint]
+fail-under = 8.0
+ignore-paths = [".venv", "build", "dist", "docs", "examples", "out", "tests"]
+typecheck.signature-mutators = [
+  'click.decorators.argument',
+  'click.decorators.confirmation_option',
+  'click.decorators.help_option',
+  'click.decorators.option',
+  'click.decorators.pass_context',
+  'click.decorators.version_option',
+]
+
+[tool.mypy]
+disable_error_code = "import-untyped"
+exclude = ["build", "out"]
+
+[tool.bandit]
+exclude_dirs = [".venv", "tests"]
