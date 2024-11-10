@@ -21,6 +21,9 @@ jobs:
       matrix:
         os: [ubuntu-22.04, ubuntu-20.04]
         platform: [linux/amd64, linux/arm64]
+    env:
+      REGISTRY: |
+        ghcr.io
 
     steps:
       - name: Checkout Repository
@@ -31,8 +34,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/mountaingod2/my_pkg
-            # docker.io/mountaingod2/my_pkg  # Uncomment for Docker Hub
+            ${{ env.REGISTRY }}/${{ github.repository }}
           tags: |
             type=schedule,pattern=nightly
             type=ref,event=branch
