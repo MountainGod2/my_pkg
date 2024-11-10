@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.2 (2024-11-10)
+
+### Bug Fixes
+
+- Update Docker image build workflow to use environment variable for registry
+  ([`76e9d68`](https://github.com/MountainGod2/my_pkg/commit/76e9d68d981a38d688b3dce3ca502bb96f4e86ed))
+
+
 ## v0.1.1 (2024-11-10)
 
 ### Bug Fixes
