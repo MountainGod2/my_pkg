@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.3 (2024-11-10)
+
+### Bug Fixes
+
+- Move REGISTRY environment variable to the correct step in Docker image build workflow
+  ([`9a2105c`](https://github.com/MountainGod2/my_pkg/commit/9a2105c4ddd39710284066d4c89dcee3aa2a86cb))
+
+
 ## v0.1.2 (2024-11-10)
 
 ### Bug Fixes
