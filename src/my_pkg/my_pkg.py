@@ -1,6 +1,10 @@
 """my_pkg package."""
 
 
-def main() -> str:
+def main() -> None:
     """Return a greeting."""
-    return "Hello, world!"
+    print("Hello, world!")  # noqa: T201
+
+
+if __name__ == "__main__":
+    main()
