@@ -43,7 +43,7 @@ jobs:
         id: release
         uses: python-semantic-release/python-semantic-release@v9
         with:
-          github_token: '${{ secrets.GH_PAT }}'
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
           git_committer_name: 'MountainGod2'
 
       # - name: Publish to TestPyPI

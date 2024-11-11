@@ -19,7 +19,7 @@ RUN uv venv -n /app/.venv && \
 # Stage 2: Final runtime image using the python:3.12-alpine image
 FROM python:3.12-alpine AS runtime
 
-LABEL org.opencontainers.image.source https://github.com/MountainGod2/my_pkg
+LABEL org.opencontainers.image.source=https://github.com/MountainGod2/my_pkg
 LABEL org.opencontainers.image.description="A package for doing great things!"
 LABEL org.opencontainers.image.licenses="MIT"
 
