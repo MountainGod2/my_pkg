@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.7 (2024-11-11)
+
+### Bug Fixes
+
+- Remove unused SHA type from Docker image build workflow
+  ([`25945cb`](https://github.com/MountainGod2/my_pkg/commit/25945cb7f77c225d88b2eaf26767d28824e58efa))
+
+
 ## v0.1.6 (2024-11-11)
 
 ### Bug Fixes
