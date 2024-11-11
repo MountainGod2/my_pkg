@@ -58,7 +58,6 @@ jobs:
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
-            type=sha
           labels: |
             org.opencontainers.image.source=${{ github.repository }}
             org.opencontainers.image.maintainer="${{ github.actor }}"
