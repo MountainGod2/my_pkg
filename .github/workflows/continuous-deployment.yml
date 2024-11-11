@@ -24,11 +24,13 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.sha }}
-          token: '${{ secrets.GH_PAT }}'
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          persist-credentials: false
 
       - name: Ensure Correct Release Branch
         run: |
           git checkout -B ${{ github.ref_name }} ${{ github.sha }}
+
       - name: Set Up UV Environment
         uses: astral-sh/setup-uv@v3
         with:
