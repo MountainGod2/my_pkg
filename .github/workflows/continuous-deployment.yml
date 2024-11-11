@@ -15,20 +15,22 @@ jobs:
     concurrency: cd-${{ github.ref }}
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
-      id-token: write
       contents: write
+      packages: write
+      id-token: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ github.sha }}
-          token: '${{ secrets.GH_PAT }}'
+          persist-credentials: false  # Disable built-in GitHub token
 
-      - name: Ensure Correct Release Branch
+      - name: Authenticate with GH_PAT
         run: |
-          git checkout -B ${{ github.ref_name }} ${{ github.sha }}
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
 
       - name: Set Up UV Environment
         uses: astral-sh/setup-uv@v3
