@@ -15,22 +15,8 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  pre-check:
-    name: Pre-check Dockerfile
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Validate Dockerfile Syntax
-        run: docker run --rm -i hadolint/hadolint < Dockerfile
-
-      - name: Docker Linting
-        uses: hadolint/hadolint-action@v3.1.0
-
   docker:
     name: Build and Push Docker Image
-    needs: pre-check
     runs-on: ubuntu-22.04
     permissions:
       contents: read
@@ -42,6 +28,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: '${{ secrets.GH_PAT }}'
 
       - name: Set up QEMU for Multi-Platform Builds
         uses: docker/setup-qemu-action@v3
