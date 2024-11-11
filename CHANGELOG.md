@@ -1,6 +1,40 @@
 # CHANGELOG
 
 
+## v0.1.6 (2024-11-11)
+
+### Bug Fixes
+
+- Update continuous deployment and Docker image build workflows to use GITHUB_TOKEN and DOCKER_PAT
+  for authentication
+  ([`1a56964`](https://github.com/MountainGod2/my_pkg/commit/1a5696422da04958ab8893062fc153cd19a98f4a))
+
+- Update continuous deployment workflow to ensure correct branch checkout and use GH_PAT for
+  authentication
+  ([`f44015f`](https://github.com/MountainGod2/my_pkg/commit/f44015f1669a8ff48a9e0d12774b33749d493153))
+
+- Update user email and name in continuous deployment workflow
+  ([`2d47936`](https://github.com/MountainGod2/my_pkg/commit/2d479361adc8cb53d10e5d57978f4554b0782922))
+
+- Update continuous deployment workflow to enhance authentication and permissions
+  ([`eeffa83`](https://github.com/MountainGod2/my_pkg/commit/eeffa83c50954e87e934c25522e47512b183014d))
+
+- Remove hardcoded committer name from continuous deployment workflow
+  ([`27c18d6`](https://github.com/MountainGod2/my_pkg/commit/27c18d6e28eb1c3de08cc382453589dd820f5ddc))
+
+- Update GitHub token in continuous deployment workflow and correct label format in Dockerfile
+  ([`4622091`](https://github.com/MountainGod2/my_pkg/commit/462209183c29281aa64441bbf0fbb642e6e735f3))
+
+- Remove pre-check job from Docker image build workflow and update checkout step to use GH_PAT
+  ([`52112c7`](https://github.com/MountainGod2/my_pkg/commit/52112c71d0109bffbbd1d9730d3b4f617c5b94fb))
+
+- Enhance Docker image build workflow with pre-checks and multi-platform support
+  ([`fbf6e69`](https://github.com/MountainGod2/my_pkg/commit/fbf6e696eacb6cf3d6815ad5d5fac2fbfb7e6f6b))
+
+- Update Docker image build workflow to use GITHUB_TOKEN for authentication
+  ([`adf833f`](https://github.com/MountainGod2/my_pkg/commit/adf833f65977a8216b1e0f4ff24f9287c47a34dc))
+
+
 ## v0.1.5 (2024-11-10)
 
 ### Bug Fixes
