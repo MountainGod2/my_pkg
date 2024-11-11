@@ -15,23 +15,20 @@ jobs:
     concurrency: cd-${{ github.ref }}
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
-      contents: write
-      packages: write
       id-token: write
+      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false  # Disable built-in GitHub token
+          ref: ${{ github.sha }}
+          token: '${{ secrets.GH_PAT }}'
 
-      - name: Authenticate with GH_PAT
+      - name: Ensure Correct Release Branch
         run: |
-          git config --global user.email "admin@reid.ca"
-          git config --global user.name "MountainGod2"
-          echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
-
+          git checkout -B ${{ github.ref_name }} ${{ github.sha }}
       - name: Set Up UV Environment
         uses: astral-sh/setup-uv@v3
         with:
@@ -45,7 +42,8 @@ jobs:
         id: release
         uses: python-semantic-release/python-semantic-release@v9
         with:
-          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          github_token: '${{ secrets.GH_PAT }}'
+          git_committer_name: 'MountainGod2'
 
       # - name: Publish to TestPyPI
       #   if: steps.release.outputs.released == 'true'
