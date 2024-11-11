@@ -1,10 +1,15 @@
 """my_pkg package."""
 
 
-def main() -> None:
+def hello() -> str:
     """Return a greeting."""
-    print("Hello, world!")  # noqa: T201
+    return "Hello, world!"
 
 
-if __name__ == "__main__":
+def main() -> None:  # pragma: no cover
+    """Print the greeting."""
+    print(hello())  # noqa: T201
+
+
+if __name__ == "__main__":  # pragma: no cover
     main()
