@@ -28,8 +28,8 @@ jobs:
 
       - name: Authenticate with GH_PAT
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "admin@reid.ca"
+          git config --global user.name "MountainGod2"
           echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
 
       - name: Set Up UV Environment
