@@ -1,6 +1,25 @@
 # CHANGELOG
 
 
+## v0.2.0 (2024-11-11)
+
+### Features
+
+- Refactor greeting function and update main entry point
+  ([`7617cf4`](https://github.com/MountainGod2/my_pkg/commit/7617cf4ba8b5dccec19fb660de046b52be675d13))
+
+- Add main entry point and update greeting function to print message
+  ([`ad41157`](https://github.com/MountainGod2/my_pkg/commit/ad41157aed653340f803ff3425286435172f4ece))
+
+
+## v0.1.7 (2024-11-11)
+
+### Bug Fixes
+
+- Remove unused SHA type from Docker image build workflow
+  ([`25945cb`](https://github.com/MountainGod2/my_pkg/commit/25945cb7f77c225d88b2eaf26767d28824e58efa))
+
+
 ## v0.1.6 (2024-11-11)
 
 ### Bug Fixes
