@@ -14,14 +14,20 @@ Functions
 
 .. autoapisummary::
 
+   my_pkg.my_pkg.hello
    my_pkg.my_pkg.main
 
 
 Module Contents
 ---------------
 
-.. py:function:: main() -> str
+.. py:function:: hello() -> str
 
    Return a greeting.
+
+
+.. py:function:: main() -> None
+
+   Print the greeting.
 
 

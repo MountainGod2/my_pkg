@@ -1,0 +1,11 @@
+my_pkg.__main__
+===============
+
+.. py:module:: my_pkg.__main__
+
+.. autoapi-nested-parse::
+
+   Main entry point for the package.
+
+
+

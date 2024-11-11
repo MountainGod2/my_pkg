@@ -78,12 +78,24 @@
 <span></span><span class="sd">&quot;&quot;&quot;my_pkg package.&quot;&quot;&quot;</span>
 
 
-<div class="viewcode-block" id="main">
-<a class="viewcode-back" href="../../autoapi/my_pkg/my_pkg/index.html#my_pkg.my_pkg.main">[docs]</a>
-<span class="k">def</span> <span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<div class="viewcode-block" id="hello">
+<a class="viewcode-back" href="../../autoapi/my_pkg/my_pkg/index.html#my_pkg.my_pkg.hello">[docs]</a>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Return a greeting.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;Hello, world!&quot;</span></div>
 
+
+
+<div class="viewcode-block" id="main">
+<a class="viewcode-back" href="../../autoapi/my_pkg/my_pkg/index.html#my_pkg.my_pkg.main">[docs]</a>
+<span class="k">def</span> <span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># pragma: no cover</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Print the greeting.&quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">hello</span><span class="p">())</span>  <span class="c1"># noqa: T201</span></div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>  <span class="c1"># pragma: no cover</span>
+    <span class="n">main</span><span class="p">()</span>
 </pre></div>
 
            </div>
