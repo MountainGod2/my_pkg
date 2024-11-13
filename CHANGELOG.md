@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.6 (2024-11-13)
+
+### Bug Fixes
+
+- Update Docker workflow to support multi-platform builds and refine artifact naming
+  ([`45fdc69`](https://github.com/MountainGod2/my_pkg/commit/45fdc699a8a2dcee695a18c58d579be90ef781a1))
+
+
 ## v0.3.5 (2024-11-13)
 
 ### Bug Fixes
