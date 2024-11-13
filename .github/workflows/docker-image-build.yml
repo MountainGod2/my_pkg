@@ -64,26 +64,19 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platforms: linux/amd64,linux/arm64   # Build both architectures in one go
+          platforms: linux/amd64,linux/arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          annotations: |
-            "org.opencontainers.image.description"="Docker image for ${{ env.IMAGE_NAME }}"
-            "org.opencontainers.image.url"="https://github.com/${{ github.repository }}"
-            "org.opencontainers.image.documentation"="https://github.com/${{ github.repository }}/blob/main/README.md"
-            "org.opencontainers.image.vendor"="${{ github.repository_owner }}"
-            "org.opencontainers.image.licenses"="MIT"
-            "org.opencontainers.image.title"="${{ env.IMAGE_NAME }}"
-            "org.opencontainers.image.version"="${{ steps.meta.outputs.version }}"
-            "org.opencontainers.image.revision"="${{ github.sha }}"
+          annotations: ${{ steps.meta.outputs.annotations }}
 
-      - name: Attest
+      - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v1
         id: attest
         with:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
+          github-token: ${{ secrets.DOCKER_PAT }}
 
       - name: Upload Build Logs
         if: failure()
