@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.5.0 (2024-11-13)
+
+### Features
+
+- Enhance Docker image build workflow with provenance attestation
+  ([`8842b64`](https://github.com/MountainGod2/my_pkg/commit/8842b64d08687d8ab4eec7973511f925da006f24))
+
+
 ## v0.4.2 (2024-11-13)
 
 ### Bug Fixes
