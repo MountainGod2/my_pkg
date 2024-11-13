@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.4.1 (2024-11-13)
+
+### Bug Fixes
+
+- Update Docker workflow to correct image description annotation format
+  ([`2f24669`](https://github.com/MountainGod2/my_pkg/commit/2f246698bf5ccf335096be49a40f54ff6be8b325))
+
+
 ## v0.4.0 (2024-11-13)
 
 ### Features
