@@ -60,7 +60,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           push: true
-          outputs: type=image,name=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }},push-by-digest=true
+          outputs: type=image,name=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Export Digest for Manifest Creation
         run: |
