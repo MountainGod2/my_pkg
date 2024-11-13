@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.2 (2024-11-13)
+
+### Bug Fixes
+
+- Remove unsupported ARM architectures from Docker build workflow
+  ([`cbdbbd0`](https://github.com/MountainGod2/my_pkg/commit/cbdbbd0d0d3a1aba9359de2684a8cbc4d0e5f668))
+
+
 ## v0.3.1 (2024-11-13)
 
 ### Bug Fixes
