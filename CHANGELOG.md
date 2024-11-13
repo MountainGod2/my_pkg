@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.1 (2024-11-13)
+
+### Bug Fixes
+
+- Remove push-by-digest option from Docker image build outputs
+  ([`92dc25e`](https://github.com/MountainGod2/my_pkg/commit/92dc25e596783442b9759923c9f5594aae9d61c4))
+
+
 ## v0.3.0 (2024-11-13)
 
 ### Features
