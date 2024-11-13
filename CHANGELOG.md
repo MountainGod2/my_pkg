@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.0 (2024-11-13)
+
+### Features
+
+- Enhance Docker build workflow for multi-platform support
+  ([`bc4ab11`](https://github.com/MountainGod2/my_pkg/commit/bc4ab110960c1ee398c9697e5e30e075eca20337))
+
+
 ## v0.2.1 (2024-11-13)
 
 ### Bug Fixes
