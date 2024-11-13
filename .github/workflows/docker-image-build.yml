@@ -50,7 +50,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.DOCKER_PAT }}
 
-      - name: Build and Push by Digest
+      - name: Build and Push by Tag
         id: build
         uses: docker/build-push-action@v6
         with:
@@ -58,7 +58,6 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           push: true
-          outputs: type=image,name=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }},push-by-digest=true
 
       - name: Export Digest for Manifest Creation
         run: |
