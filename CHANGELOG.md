@@ -1,6 +1,15 @@
 # CHANGELOG
 
 
+## v0.4.0 (2024-11-13)
+
+### Features
+
+- Refactor Docker workflow to streamline builds, add nightly schedule, and support multi-platform
+  architecture
+  ([`26e3636`](https://github.com/MountainGod2/my_pkg/commit/26e363681d2f1c524d0e239ef8d4daaf896fad6c))
+
+
 ## v0.3.6 (2024-11-13)
 
 ### Bug Fixes
