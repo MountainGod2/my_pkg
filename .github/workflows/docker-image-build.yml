@@ -67,14 +67,14 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           annotations: |
-            "org.opencontainers.image.description": "Docker image for ${{ github.repository }}"
-            "org.opencontainers.image.url": "https://github.com/${{ github.repository }}"
-            "org.opencontainers.image.documentation": "https://github.com/${{ github.repository }}/blob/main/README.md"
-            "org.opencontainers.image.vendor": "${{ github.repository_owner }}"
-            "org.opencontainers.image.licenses": "MIT"
-            "org.opencontainers.image.title": "${{ github.repository }}"
-            "org.opencontainers.image.version": "${{ steps.meta.outputs.version }}"
-            "org.opencontainers.image.revision": "${{ github.sha }}"
+            "org.opencontainers.image.description"="Docker image for ${{ env.IMAGE_NAME }}"
+            "org.opencontainers.image.url"="https://github.com/${{ github.repository }}"
+            "org.opencontainers.image.documentation"="https://github.com/${{ github.repository }}/blob/main/README.md"
+            "org.opencontainers.image.vendor"="${{ github.repository_owner }}"
+            "org.opencontainers.image.licenses"="MIT"
+            "org.opencontainers.image.title"="${{ env.IMAGE_NAME }}"
+            "org.opencontainers.image.version"="${{ steps.meta.outputs.version }}"
+            "org.opencontainers.image.revision"="${{ github.sha }}"
 
       - name: Upload Build Logs
         if: failure()
