@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.4 (2024-11-13)
+
+### Bug Fixes
+
+- Update Docker image build workflow to push by tag instead of digest
+  ([`43bfabb`](https://github.com/MountainGod2/my_pkg/commit/43bfabb301d26432a5968267b35c34716b760981))
+
+
 ## v0.3.3 (2024-11-13)
 
 ### Bug Fixes
