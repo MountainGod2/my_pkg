@@ -1,4 +1,4 @@
-name: Docker Build and Push
+name: Docker Build and Multi-Platform Push
 
 on:
   push:
@@ -12,6 +12,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
+  # Step 1: Platform-Specific Build and Push
   build:
     runs-on: ubuntu-latest
     strategy:
@@ -66,9 +67,10 @@ jobs:
       - name: Upload Digest Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: "digest-${{ matrix.platform }}"
+          name: "digest-${{ env.PLATFORM_PAIR }}"  # Replace slash with hyphen
           path: /tmp/digests/${{ env.PLATFORM_PAIR }}.digest
 
+  # Step 2: Merge Manifest from Platform-Specific Digests
   merge:
     runs-on: ubuntu-latest
     needs: build
@@ -76,7 +78,7 @@ jobs:
       - name: Download All Digests
         uses: actions/download-artifact@v4
         with:
-          name: "digest-linux/amd64,digest-linux/arm64"
+          name: "digest-linux-amd64,digest-linux-arm64"
           path: /tmp/digests
 
       - name: Set up Docker Buildx
