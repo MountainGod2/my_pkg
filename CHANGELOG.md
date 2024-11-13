@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.7.0 (2024-11-13)
+
+### Features
+
+- Add id-token permission for Docker image build workflow
+  ([`d993715`](https://github.com/MountainGod2/my_pkg/commit/d993715c96e72db5ce9c11ac9946d4c59e56924a))
+
+
 ## v0.6.0 (2024-11-13)
 
 ### Features
