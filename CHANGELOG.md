@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.3 (2024-11-13)
+
+### Bug Fixes
+
+- Restore push-by-digest option in Docker image build outputs
+  ([`4a4ad20`](https://github.com/MountainGod2/my_pkg/commit/4a4ad20ca17a0b2586ca2563f19bd5d9dc28b31b))
+
+
 ## v0.3.2 (2024-11-13)
 
 ### Bug Fixes
