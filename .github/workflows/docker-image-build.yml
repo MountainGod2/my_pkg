@@ -56,7 +56,6 @@ jobs:
           labels: |
             org.opencontainers.image.source=${{ github.repository }}
             org.opencontainers.image.maintainer="${{ github.actor }}"
-            org.opencontainers.image.description="Docker image for ${{ github.repository }}"
 
       - name: Build and Push Docker Image for All Platforms
         uses: docker/build-push-action@v6
@@ -67,6 +66,15 @@ jobs:
           platforms: linux/amd64,linux/arm64   # Build both architectures in one go
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          annotations: |
+            "org.opencontainers.image.description": "Docker image for ${{ github.repository }}"
+            "org.opencontainers.image.url": "https://github.com/${{ github.repository }}"
+            "org.opencontainers.image.documentation": "https://github.com/${{ github.repository }}/blob/main/README.md"
+            "org.opencontainers.image.vendor": "${{ github.repository_owner }}"
+            "org.opencontainers.image.licenses": "MIT"
+            "org.opencontainers.image.title": "${{ github.repository }}"
+            "org.opencontainers.image.version": "${{ steps.meta.outputs.version }}"
+            "org.opencontainers.image.revision": "${{ github.sha }}"
 
       - name: Upload Build Logs
         if: failure()
