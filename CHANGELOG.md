@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.4.2 (2024-11-13)
+
+### Bug Fixes
+
+- Correct annotation format in Docker image build workflow
+  ([`65a4222`](https://github.com/MountainGod2/my_pkg/commit/65a42224ce7142c21a1db498ef317aa6cd2aa07f))
+
+
 ## v0.4.1 (2024-11-13)
 
 ### Bug Fixes
