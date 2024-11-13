@@ -6,7 +6,7 @@ on:
     - cron: "0 10 * * *"  # Run every day at 10:00 UTC for nightly builds
   push:
     tags:
-      - 'v*'               # Push events for semantic version tags
+      - 'v**'               # Push events for semantic version tags
     branches:
       - develop
 
