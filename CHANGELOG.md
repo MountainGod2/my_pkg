@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.5 (2024-11-13)
+
+### Bug Fixes
+
+- Simplify Docker image build workflow by removing unnecessary comments and refining artifact names
+  ([`16d19ed`](https://github.com/MountainGod2/my_pkg/commit/16d19edc86c3a8865ade9106719af1a0433a3733))
+
+
 ## v0.3.4 (2024-11-13)
 
 ### Bug Fixes
