@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.2.1 (2024-11-13)
+
+### Bug Fixes
+
+- Update docker-image-build.yml
+  ([`195ef89`](https://github.com/MountainGod2/my_pkg/commit/195ef89898534f8e632b2e0fd639230731b99245))
+
+
 ## v0.2.0 (2024-11-11)
 
 ### Features
