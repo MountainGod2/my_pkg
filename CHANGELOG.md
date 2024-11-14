@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.9.0 (2024-11-14)
+
+### Features
+
+- Enhance Docker image build workflow with dynamic Open Container Initiative labels and annotations
+  ([`2f7df93`](https://github.com/MountainGod2/my_pkg/commit/2f7df93c4ecd488d77b2a11d329b11a56e66c815))
+
+
 ## v0.8.1 (2024-11-14)
 
 ### Bug Fixes
