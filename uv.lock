@@ -517,14 +517,14 @@ wheels = [
 
 [[package]]
 name = "jedi"
-version = "0.19.1"
+version = "0.19.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "parso" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d6/99/99b493cec4bf43176b678de30f81ed003fd6a647a301b9c927280c600f0a/jedi-0.19.1.tar.gz", hash = "sha256:cf0496f3651bc65d7174ac1b7d043eff454892c708a87d1b683e57b569927ffd", size = 1227821 }
+sdist = { url = "https://files.pythonhosted.org/packages/72/3a/79a912fbd4d8dd6fbb02bf69afd3bb72cf0c729bb3063c6f4498603db17a/jedi-0.19.2.tar.gz", hash = "sha256:4770dc3de41bde3966b02eb84fbcf557fb33cce26ad23da12c742fb50ecb11f0", size = 1231287 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/20/9f/bc63f0f0737ad7a60800bfd472a4836661adae21f9c2535f3957b1e54ceb/jedi-0.19.1-py2.py3-none-any.whl", hash = "sha256:e983c654fe5c02867aef4cdfce5a2fbb4a50adc0af145f70504238f18ef5e7e0", size = 1569361 },
+    { url = "https://files.pythonhosted.org/packages/c0/5a/9cac0c82afec3d09ccd97c8b6502d48f165f9124db81b4bcb90b4af974ee/jedi-0.19.2-py2.py3-none-any.whl", hash = "sha256:a8ef22bde8490f57fe5c7681a3c83cb58874daf72b4784de3cce5b6ef6edb5b9", size = 1572278 },
 ]
 
 [[package]]
@@ -1124,7 +1124,7 @@ wheels = [
 
 [[package]]
 name = "python-semantic-release"
-version = "9.13.0"
+version = "9.14.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -1140,9 +1140,9 @@ dependencies = [
     { name = "shellingham" },
     { name = "tomlkit" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/34/ad/081fd6323e369c25673189ad1619a45846ba41ef8e094d0cb5081a6c7924/python_semantic_release-9.13.0.tar.gz", hash = "sha256:b8953424434d3974e31f1f2284b88cb215268df3bb7cc7035a7c28af3e6b5278", size = 230989 }
+sdist = { url = "https://files.pythonhosted.org/packages/71/19/72d0fb90df1b20b4623a99ddd9a454bfba02b832e85a3e27ab57ec38f715/python_semantic_release-9.14.0.tar.gz", hash = "sha256:5b69a626458bfb50686d27d9713160eb2bf9897b0c17985f1c68d7316b8e07b6", size = 233999 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/13/f2/e55ca88d30d71d0593d4284654218e440f0b862853b5c475d5394227177b/python_semantic_release-9.13.0-py3-none-any.whl", hash = "sha256:635b7f3eb7d8bfab94045caaeac8fb48cd09d6b70b6712deca793c076403ab8e", size = 105858 },
+    { url = "https://files.pythonhosted.org/packages/c4/8f/86c618d7df34d8a45b37b867bb7cdd0447ee142e902093f742546b97f1f0/python_semantic_release-9.14.0-py3-none-any.whl", hash = "sha256:f089a6ad976e909d5f87015e9f541f9fd503d3db41653efaf0157d874902e519", size = 107682 },
 ]
 
 [[package]]
@@ -1420,16 +1420,16 @@ wheels = [
 
 [[package]]
 name = "sphinx-rtd-theme"
-version = "3.0.1"
+version = "3.0.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "docutils" },
     { name = "sphinx" },
     { name = "sphinxcontrib-jquery" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/55/ff/e24d14f397ce07a93d302be444d4da7953294f9b1be99497dc92f800ac7b/sphinx_rtd_theme-3.0.1.tar.gz", hash = "sha256:a4c5745d1b06dfcb80b7704fe532eb765b44065a8fad9851e4258c8804140703", size = 7620352 }
+sdist = { url = "https://files.pythonhosted.org/packages/91/44/c97faec644d29a5ceddd3020ae2edffa69e7d00054a8c7a6021e82f20335/sphinx_rtd_theme-3.0.2.tar.gz", hash = "sha256:b7457bc25dda723b20b086a670b9953c859eab60a2a03ee8eb2bb23e176e5f85", size = 7620463 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c8/51/aed903ad0843a06ccfb93e6e8849e752a9379eaec0f50d9237ae373dd737/sphinx_rtd_theme-3.0.1-py2.py3-none-any.whl", hash = "sha256:921c0ece75e90633ee876bd7b148cfaad136b481907ad154ac3669b6fc957916", size = 7655509 },
+    { url = "https://files.pythonhosted.org/packages/85/77/46e3bac77b82b4df5bb5b61f2de98637724f246b4966cfc34bc5895d852a/sphinx_rtd_theme-3.0.2-py2.py3-none-any.whl", hash = "sha256:422ccc750c3a3a311de4ae327e82affdaf59eb695ba4936538552f3b00f4ee13", size = 7655561 },
 ]
 
 [[package]]
