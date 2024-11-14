@@ -55,10 +55,17 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
           labels: |
-            org.opencontainers.image.title=${{ github.repository }}
-            org.opencontainers.image.description=${{ github.repository }}
-            org.opencontainers.image.source=${{ github.repository }}
-            org.opencontainers.image.maintainer=${{ github.actor }}
+            org.opencontainers.image.title=${{ env.IMAGE_NAME }}
+            org.opencontainers.image.description="Docker image for ${{ env.IMAGE_NAME }}"
+            org.opencontainers.image.url="https://github.com/${{ github.repository }}"
+            org.opencontainers.image.source="ghcr.io/${{ env.IMAGE_NAME }}"
+            org.opencontainers.image.vendor="${{ github.repository_owner }}"
+            org.opencontainers.image.version=${{ github.ref }}
+          annotations: |
+            com.github.actions.name=${{ github.workflow }}
+            com.github.actions.description=${{ github.workflow }}
+            com.github.actions.icon=package
+            com.github.actions.color=blue
 
       - name: Build and Push Docker Image
         id: push
