@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.8.0 (2024-11-14)
+
+### Features
+
+- Update Docker image build workflow annotations and improve log upload path
+  ([`87a5d40`](https://github.com/MountainGod2/my_pkg/commit/87a5d408bba5b36c2d29b521fe25259673b3cc88))
+
+
 ## v0.7.0 (2024-11-13)
 
 ### Features
