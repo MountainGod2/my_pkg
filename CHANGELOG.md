@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.9.2 (2024-11-14)
+
+### Bug Fixes
+
+- Add labels for Docker image metadata in workflow
+  ([`6e8fbe6`](https://github.com/MountainGod2/my_pkg/commit/6e8fbe6dfe38f217107846b3982b35b66880c5f8))
+
+
 ## v0.9.1 (2024-11-14)
 
 ### Bug Fixes
