@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.8.1 (2024-11-14)
+
+### Bug Fixes
+
+- Update Docker image build workflow to include Open Container Initiative labels
+  ([`1574e79`](https://github.com/MountainGod2/my_pkg/commit/1574e79081142154bd17a62dbd2eb83bbd2f8935))
+
+
 ## v0.8.0 (2024-11-14)
 
 ### Features
