@@ -1,6 +1,33 @@
 # CHANGELOG
 
 
+## v0.9.1 (2024-11-14)
+
+### Bug Fixes
+
+- Update Dockerfile and workflow metadata for improved image labeling
+  ([`bc7ff1d`](https://github.com/MountainGod2/my_pkg/commit/bc7ff1d713b1983204855b3353cabae7c5dc62f0))
+
+### Chores
+
+- **deps**: Update actions/upload-artifact action to v4
+  ([#4](https://github.com/MountainGod2/my_pkg/pull/4),
+  [`6ff9759`](https://github.com/MountainGod2/my_pkg/commit/6ff9759ef06b76b9f9b56a5b2e57eec82566e178))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update dependency ubuntu to v24 ([#5](https://github.com/MountainGod2/my_pkg/pull/5),
+  [`b144e30`](https://github.com/MountainGod2/my_pkg/commit/b144e305624eeb3e06878404e5d69d4364c443f4))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Lock file maintenance
+  ([`2b84019`](https://github.com/MountainGod2/my_pkg/commit/2b840191f7e42b2a0e04577c1da68d7e86c43bce))
+
+- Update package version to 0.9.0 in uv.lock
+  ([`a1fe012`](https://github.com/MountainGod2/my_pkg/commit/a1fe012d378574c752dce358b73710afec4644d3))
+
+
 ## v0.9.0 (2024-11-14)
 
 ### Features
