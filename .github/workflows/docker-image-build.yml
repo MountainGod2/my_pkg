@@ -55,12 +55,10 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
           labels: |
+            org.opencontainers.image.title=${{ github.repository }}
+            org.opencontainers.image.description=${{ github.repository }}
             org.opencontainers.image.source=${{ github.repository }}
             org.opencontainers.image.maintainer=${{ github.actor }}
-          annotations: |
-            com.github.actions.name=${{ github.workflow }}
-            com.github.actions.description=${{ github.workflow }}
-            com.github.actions.icon=package
 
       - name: Build and Push Docker Image
         id: push
