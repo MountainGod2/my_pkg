@@ -1,6 +1,14 @@
 # Stage 1: Build stage using the python:3.12-alpine image
 FROM python:3.12-alpine AS builder
 
+# Set the maintainer and other metadata for the image
+LABEL maintainer="MountainGod2 <admin@reid.ca>"
+LABEL org.opencontainers.image.source=https://github.com/MountainGod2/my_pkg
+LABEL org.opencontainers.image.description="A package for doing great things!"
+LABEL org.opencontainers.image.licenses="MIT"
+LABEL org.opencontainers.image.authors="MountainGod2"
+LABEL org.opencontainers.image.url="https://github.com/MountainGod2/my_pkg"
+
 # Install necessary build dependencies for Python packages
 RUN apk add --no-cache git gcc musl-dev libffi-dev openssl-dev && \
     pip install --no-cache-dir uv
@@ -18,10 +26,6 @@ RUN uv venv -n /app/.venv && \
 
 # Stage 2: Final runtime image using the python:3.12-alpine image
 FROM python:3.12-alpine AS runtime
-
-LABEL org.opencontainers.image.source=https://github.com/MountainGod2/my_pkg
-LABEL org.opencontainers.image.description="A package for doing great things!"
-LABEL org.opencontainers.image.licenses="MIT"
 
 # Configure environment variables for the virtual environment
 ENV VIRTUAL_ENV=/app/.venv
