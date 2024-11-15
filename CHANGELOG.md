@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.9.5 (2024-11-15)
+
+### Bug Fixes
+
+- Adjust priority for SHA type in Docker image build workflow
+  ([`bd5da17`](https://github.com/MountainGod2/my_pkg/commit/bd5da177ca50d9af9d34e0750158ed949d0c44c9))
+
+
 ## v0.9.4 (2024-11-15)
 
 ### Bug Fixes
