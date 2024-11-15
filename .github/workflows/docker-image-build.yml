@@ -18,8 +18,10 @@ jobs:
     name: Build and Push Docker Image
     runs-on: ubuntu-24.04
     permissions:
-      contents: read
+      id-token: write
       packages: write
+      contents: read
+      attestations: write
 
     steps:
       - name: Convert Repository to Lowercase
