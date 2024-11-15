@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.11.1 (2024-11-15)
+
+### Bug Fixes
+
+- Update permissions to allow writing contents in Docker image build workflow
+  ([`3cfdce0`](https://github.com/MountainGod2/my_pkg/commit/3cfdce023901082410d5ed27279845d999617cdc))
+
+
 ## v0.11.0 (2024-11-15)
 
 ### Features
