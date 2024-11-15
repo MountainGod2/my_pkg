@@ -70,17 +70,9 @@ jobs:
       - name: Image Digest
         run: echo ${{ steps.push.outputs.digest }}
 
-      - name: Save Build Logs
-        run: |
-          mkdir -p /tmp/
-          docker buildx build --progress plain --platform linux/amd64,linux/arm64 -o type=local,dest=/tmp/ .
-
-      - name: Show Build Logs
-        run: cat /tmp/build.log
-
       - name: Upload Build Logs
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: docker-build-logs
-          path: /tmp/
+          path: /tmp/.buildx-cache
