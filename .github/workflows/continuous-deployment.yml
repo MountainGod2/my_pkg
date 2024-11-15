@@ -24,7 +24,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.sha }}
-          token: '${{ secrets.GITHUB_TOKEN }}'
+          token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: false
 
       - name: Ensure Correct Release Branch
@@ -45,7 +45,6 @@ jobs:
         uses: python-semantic-release/python-semantic-release@v9
         with:
           github_token: '${{ secrets.GH_PAT }}'
-          git_committer_name: 'MountainGod2'
 
       # - name: Publish to TestPyPI
       #   if: steps.release.outputs.released == 'true'
@@ -61,3 +60,9 @@ jobs:
       # - name: Publish to PyPI
       #   if: steps.release.outputs.released == 'true'
       #   uses: pypa/gh-action-pypi-publish@v1.12.2
+
+      - name: Publish Release to GitHub
+        if: steps.release.outputs.released == 'true'
+        uses: python-semantic-release/publish-action@v9
+        with:
+          github_token: '${{ secrets.GH_PAT }}'
