@@ -1,6 +1,15 @@
 # CHANGELOG
 
 
+## v0.11.6 (2024-11-15)
+
+### Bug Fixes
+
+- Update Docker image build workflow to use lowercase repository name and add build provenance
+  attestation
+  ([`70abd2e`](https://github.com/MountainGod2/my_pkg/commit/70abd2e2551b34ca80fee75f05f2080484772c92))
+
+
 ## v0.11.5 (2024-11-15)
 
 ### Bug Fixes
