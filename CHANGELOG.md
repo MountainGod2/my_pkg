@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.9.4 (2024-11-15)
+
+### Bug Fixes
+
+- Remove annotations from Docker image build workflow
+  ([`c5ea295`](https://github.com/MountainGod2/my_pkg/commit/c5ea295bb94b57ff00731c4e3199ce415d6d2fd7))
+
+
 ## v0.9.3 (2024-11-15)
 
 ### Bug Fixes
