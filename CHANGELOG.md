@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.10.1 (2024-11-15)
+
+### Bug Fixes
+
+- Update Docker image build workflow to use GITHUB_TOKEN instead of DOCKER_PAT
+  ([`4fdf54b`](https://github.com/MountainGod2/my_pkg/commit/4fdf54b35d718e6e553506f267e219f74522b69d))
+
+
 ## v0.10.0 (2024-11-15)
 
 ### Features
