@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.11.3 (2024-11-15)
+
+### Bug Fixes
+
+- Convert repository name to lowercase for Docker image build and update related steps
+  ([`ca3e86d`](https://github.com/MountainGod2/my_pkg/commit/ca3e86d40701071535ca40ba716437b909f373a8))
+
+
 ## v0.11.2 (2024-11-15)
 
 ### Bug Fixes
