@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.9.3 (2024-11-15)
+
+### Bug Fixes
+
+- Remove unnecessary labels from Docker image build workflow
+  ([`ae51701`](https://github.com/MountainGod2/my_pkg/commit/ae51701452132cc7672a8fb534e0f274180ae57b))
+
+- Remove unnecessary metadata labels from Dockerfile
+  ([`3e45e93`](https://github.com/MountainGod2/my_pkg/commit/3e45e93c94ff0c5f5536b2a551cca4cb97b2409d))
+
+
 ## v0.9.2 (2024-11-14)
 
 ### Bug Fixes
