@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.11.7 (2024-11-15)
+
+### Bug Fixes
+
+- Update Docker image build workflow permissions to include attestations
+  ([`be31a20`](https://github.com/MountainGod2/my_pkg/commit/be31a2019d044f50487b48125c00b56c0b0baff6))
+
+
 ## v0.11.6 (2024-11-15)
 
 ### Bug Fixes
