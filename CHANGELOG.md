@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.10.0 (2024-11-15)
+
+### Features
+
+- Remove id-token permission and adjust Docker image build tags
+  ([`afe6925`](https://github.com/MountainGod2/my_pkg/commit/afe6925184cf833301d931b3a47a6b4f732a9976))
+
+
 ## v0.9.6 (2024-11-15)
 
 ### Bug Fixes
