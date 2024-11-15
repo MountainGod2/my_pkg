@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.9.6 (2024-11-15)
+
+### Bug Fixes
+
+- Update semver pattern to conditionally enable for non-tag branches
+  ([`ed7aac1`](https://github.com/MountainGod2/my_pkg/commit/ed7aac1ac954caa23e3ebc9b93177ba501779771))
+
+
 ## v0.9.5 (2024-11-15)
 
 ### Bug Fixes
