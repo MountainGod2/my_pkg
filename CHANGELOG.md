@@ -1,6 +1,24 @@
 # CHANGELOG
 
 
+## v0.11.5 (2024-11-15)
+
+### Bug Fixes
+
+- Update GitHub Actions workflows to use secrets directly and add publish step
+  ([`dc04d0d`](https://github.com/MountainGod2/my_pkg/commit/dc04d0d8e59e37e752f36628a08d651d9705fc29))
+
+### Chores
+
+- **deps**: Lock file maintenance ([#9](https://github.com/MountainGod2/my_pkg/pull/9),
+  [`3569d0d`](https://github.com/MountainGod2/my_pkg/commit/3569d0ddb1fdf579e2f839bb6788613fe99df4d6))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Lock file maintenance
+  ([`b566d8a`](https://github.com/MountainGod2/my_pkg/commit/b566d8adf1f4fc192e4f247dc262b50d3f7f6d7a))
+
+
 ## v0.11.4 (2024-11-15)
 
 ### Bug Fixes
