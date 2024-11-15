@@ -55,9 +55,6 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
             type=sha
-          labels: |
-            org.opencontainers.image.title="${{ env.IMAGE_NAME }}"
-            org.opencontainers.image.description="Docker image for ${{ env.IMAGE_NAME }}"
 
       - name: Build and Push Docker Image
         id: push
