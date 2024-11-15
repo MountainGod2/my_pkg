@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.11.0 (2024-11-15)
+
+### Features
+
+- Add steps to save and display Docker build logs
+  ([`88bd152`](https://github.com/MountainGod2/my_pkg/commit/88bd152235b6dfabbc58dc755dd4f320d4bb1c7b))
+
+
 ## v0.10.1 (2024-11-15)
 
 ### Bug Fixes
