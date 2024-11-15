@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v0.11.4 (2024-11-15)
+
+### Bug Fixes
+
+- Update GitHub Actions workflow to use GITHUB_TOKEN and add exempt labels
+  ([`5911d27`](https://github.com/MountainGod2/my_pkg/commit/5911d27361b461b29075056bfaa34d2240cf8684))
+
+### Chores
+
+- **deps**: Lock file maintenance ([#8](https://github.com/MountainGod2/my_pkg/pull/8),
+  [`bbd2106`](https://github.com/MountainGod2/my_pkg/commit/bbd210643dd089d10a794fe201f2bcdb2539bc5b))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.11.3 (2024-11-15)
 
 ### Bug Fixes
