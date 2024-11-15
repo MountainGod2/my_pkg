@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.11.2 (2024-11-15)
+
+### Bug Fixes
+
+- Update permissions for Docker image build workflow and add testing step
+  ([`8bc057e`](https://github.com/MountainGod2/my_pkg/commit/8bc057e534293c2a71043b4c8b2877df6f698230))
+
+- Update build log handling in Docker image build workflow
+  ([`73a4011`](https://github.com/MountainGod2/my_pkg/commit/73a4011d10ae851c20093580ec53e29e6017e816))
+
+
 ## v0.11.1 (2024-11-15)
 
 ### Bug Fixes
