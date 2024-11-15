@@ -21,7 +21,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-      id-token: write
 
     steps:
       - name: Checkout Repository
@@ -49,7 +48,6 @@ jobs:
           images: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=sha,priority=2000
             type=schedule,pattern=nightly
             type=ref,event=branch
             type=semver,pattern={{version}}
