@@ -39,7 +39,7 @@ jobs:
           enable-cache: true
           cache-dependency-glob: uv.lock
 
-      - name: Install Dependencies
+      - name: Install Package and Dependencies
         run: uv sync
 
       - name: Run Python Semantic Release
@@ -62,6 +62,10 @@ jobs:
       # - name: Publish to PyPI
       #   if: steps.release.outputs.released == 'true'
       #   uses: pypa/gh-action-pypi-publish@v1.12.2
+
+      - name: Update Lockfile
+        if: steps.release.outputs.released == 'true'
+        run: uv lock
 
       - name: Publish Release to GitHub
         if: steps.release.outputs.released == 'true'
