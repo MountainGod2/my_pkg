@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.12.0 (2024-11-16)
+
+### Chores
+
+- **deps**: Remove schedule for lock file maintenance and Docker dependency grouping
+  ([`4630356`](https://github.com/MountainGod2/my_pkg/commit/46303560a667aff170df80d98b36d1499a203739))
+
+### Features
+
+- Add merge_group trigger to continuous integration workflow
+  ([`d29e972`](https://github.com/MountainGod2/my_pkg/commit/d29e972646132d61b34035a968fe8a21e26eee50))
+
+
 ## v0.11.8 (2024-11-16)
 
 ### Bug Fixes
