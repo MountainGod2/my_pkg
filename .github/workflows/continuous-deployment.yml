@@ -17,6 +17,8 @@ jobs:
     permissions:
       id-token: write
       contents: write
+      attestations: write
+      packages: write
 
     steps:
       - name: Checkout Repository
