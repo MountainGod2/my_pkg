@@ -67,6 +67,13 @@ jobs:
         if: steps.release.outputs.released == 'true'
         run: uv lock
 
+      - name: Cache Lockfile
+        if: steps.release.outputs.released == 'true'
+        uses: actions/cache@v2
+        with:
+          path: uv.lock
+          key: uv-lock-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+
       - name: Publish Release to GitHub
         if: steps.release.outputs.released == 'true'
         uses: python-semantic-release/publish-action@v9
