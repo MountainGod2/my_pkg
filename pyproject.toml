@@ -6,7 +6,7 @@ name = "my_pkg"
 readme = "README.md"
 requires-python = ">=3.12"
 scripts.my_pkg = "my_pkg.my_pkg:main"
-version = "0.12.3"
+version = "0.12.4"
 
 [dependency-groups]
 dev = [

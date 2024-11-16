@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.12.4 (2024-11-16)
+
+### Bug Fixes
+
+- Streamline Docker image build workflow by removing unnecessary branch trigger
+  ([`2ba2cd0`](https://github.com/MountainGod2/my_pkg/commit/2ba2cd0b10a893f1b6ae66d9ca432bcf30f28b43))
+
+
 ## v0.12.3 (2024-11-16)
 
 ### Bug Fixes
