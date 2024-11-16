@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.12.2 (2024-11-16)
+
+### Bug Fixes
+
+- Update permissions in continuous deployment workflow
+  ([`2af5b5d`](https://github.com/MountainGod2/my_pkg/commit/2af5b5d3bf177dca927122c70a6bc98a349d454d))
+
+### Chores
+
+- Remove merge_group trigger from continuous integration workflow
+  ([`acd9ad9`](https://github.com/MountainGod2/my_pkg/commit/acd9ad9acd9504c7594ef04e2b7dd9fe356ef661))
+
+
 ## v0.12.1 (2024-11-16)
 
 ### Bug Fixes
