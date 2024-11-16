@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.12.5 (2024-11-16)
+
+### Bug Fixes
+
+- Update continuous deployment workflow to clarify package installation and add lockfile update step
+  ([`0ab7e89`](https://github.com/MountainGod2/my_pkg/commit/0ab7e89fb7ad10244db8ddca4b11e3fb6202d761))
+
+
 ## v0.12.4 (2024-11-16)
 
 ### Bug Fixes
