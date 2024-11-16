@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v0.12.6 (2024-11-16)
+
+### Bug Fixes
+
+- Add caching for lockfile in continuous deployment workflow
+  ([`acfeeac`](https://github.com/MountainGod2/my_pkg/commit/acfeeac5bd4c49cf68734c7f172281324eeba3f7))
+
+### Chores
+
+- **deps**: Lock file maintenance ([#13](https://github.com/MountainGod2/my_pkg/pull/13),
+  [`797a5b7`](https://github.com/MountainGod2/my_pkg/commit/797a5b7733e0c20ca5143ab0d94003fe4cc96e72))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.12.5 (2024-11-16)
 
 ### Bug Fixes
