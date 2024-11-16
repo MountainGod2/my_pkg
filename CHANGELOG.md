@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v0.11.8 (2024-11-16)
+
+### Bug Fixes
+
+- Add build provenance attestation step to continuous deployment workflow
+  ([`19fa9d3`](https://github.com/MountainGod2/my_pkg/commit/19fa9d3756b980b57747c936f6931e54cac38ab4))
+
+### Chores
+
+- **deps**: Lock file maintenance ([#10](https://github.com/MountainGod2/my_pkg/pull/10),
+  [`acbadcf`](https://github.com/MountainGod2/my_pkg/commit/acbadcf3fd3c68fa4ba05776038be18d23573d52))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.11.7 (2024-11-15)
 
 ### Bug Fixes
