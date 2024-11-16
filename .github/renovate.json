@@ -6,9 +6,6 @@
   "dependencyDashboardAutoclose": true,
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": [
-      "every weekend"
-    ],
     "automerge": true
   },
   "packageRules": [
@@ -33,23 +30,8 @@
       ],
       "automerge": true,
       "matchCurrentVersion": "!/^0/"
-    },
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "groupName": "Docker dependencies",
-      "schedule": [
-        "before 3am on the first day of the month"
-      ]
     }
   ],
-  "dockerfile": {
-    "fileMatch": [
-      "Dockerfile"
-    ],
-    "automerge": false
-  },
   "labels": [
     "dependencies"
   ],
