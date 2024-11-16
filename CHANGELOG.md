@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v0.12.1 (2024-11-16)
+
+### Bug Fixes
+
+- Update dependency versions in pyproject.toml for improved compatibility
+  ([`9d6226e`](https://github.com/MountainGod2/my_pkg/commit/9d6226e68d30ff3a22c368186b115c9a3f91aac8))
+
+### Chores
+
+- **deps**: Lock file maintenance ([#11](https://github.com/MountainGod2/my_pkg/pull/11),
+  [`cbc89bd`](https://github.com/MountainGod2/my_pkg/commit/cbc89bd3a4eced2a37e46c1436278519cffd7f6f))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.12.0 (2024-11-16)
 
 ### Chores
